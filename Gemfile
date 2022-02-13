@@ -43,7 +43,6 @@ group :development, :test do
   gem 'debug', platforms: %i[ mri mingw x64_mingw ]
   gem 'factory_bot'             # https://github.com/thoughtbot/factory_bot
   gem 'faker', require: false   # https://github.com/faker-ruby/faker
-  gem 'figaro'                  # https://github.com/laserlemon/figaro
   gem 'rspec-rails'             # https://github.com/rspec/rspec-rails
 end
 
