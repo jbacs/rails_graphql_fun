@@ -2,7 +2,7 @@ class Mutations::CreateTourGuide < Mutations::BaseMutation
   argument :name, String, required: true
   argument :email, String, required: true
 
-  field :tour_guide, Types::TourGuideType, null: false
+  field :tour_guide, Types::TourGuideType, null: true
   field :errors, [String], null: true
 
   def resolve(name:, email:)
