@@ -51,4 +51,24 @@ mutation {
     errors
   }
 }
+
+##
+
+mutation {
+  createReview(input: {
+    tourGuideId:1
+    rate:3
+    comment:"Wala jud ka ilhe!"
+  }) {
+    review {
+      rate
+      comment
+      tourGuide {
+        name
+        email
+      }
+    }
+    errors
+  }
+}
 ```
