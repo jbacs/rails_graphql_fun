@@ -31,3 +31,24 @@ http://localhost:3000/graphiql
   }
 }
 ```
+
+## Insert new tour_guide record
+
+```
+mutation {
+  createTourGuide(input: {
+    name: "Wala Ilhe"
+    email: "wala.ilhe@test.com"
+  }) {
+    tourGuide {
+      id
+      name
+      email
+      reviews {
+        id
+      }
+    }
+    errors
+  }
+}
+```
